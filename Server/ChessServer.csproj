@@ -114,7 +114,7 @@
     <Content Include="FodyWeavers.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Comp4 Proto\ChessClient.csproj">
+    <ProjectReference Include="..\ChessClient\ChessClient.csproj">
       <Project>{772c30f6-c2de-4417-a0ec-f2cb69f681fe}</Project>
       <Name>ChessClient</Name>
       <Private>True</Private>
