@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessClient", "Comp4 Proto\ChessClient.csproj", "{772C30F6-C2DE-4417-A0EC-F2CB69F681FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessClient", "ChessClient\ChessClient.csproj", "{772C30F6-C2DE-4417-A0EC-F2CB69F681FE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessServer", "Server\ChessServer.csproj", "{2839EEB6-E39D-4AA4-BBB8-4BA8BB93B679}"
 	ProjectSection(ProjectDependencies) = postProject
