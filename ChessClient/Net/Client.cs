@@ -95,20 +95,21 @@ namespace ChessClient.Net {
                 }
             }
 
-            var mappings = new UPnPNATClass().StaticPortMappingCollection;
-            if (mappings != null) {
-                try {
-                    mappings.Remove(_localPort, "UDP");
-                } catch (Exception) {
-                    // Port already removed
-                }
-                var host = Dns.GetHostEntry(Dns.GetHostName());
-                foreach (var ip2 in host.AddressList.Where(ip2 => ip2.AddressFamily == AddressFamily.InterNetwork)) {
-                    mappings.Add(_localPort, "UDP", _localPort, ip2.ToString(), true, "Local Web Server");
-                    Console.WriteLine("Forwarding port " + _localPort + " for ip " + ip2);
-                    break;
-                }
-            } else Console.WriteLine("UPnP is not supported.");
+            // TODO Re-add
+            //var mappings = new UPnPNATClass().StaticPortMappingCollection;
+            //if (mappings != null) {
+            //    try {
+            //        mappings.Remove(_localPort, "UDP");
+            //    } catch (Exception) {
+            //        // Port already removed
+            //    }
+            //    var host = Dns.GetHostEntry(Dns.GetHostName());
+            //    foreach (var ip2 in host.AddressList.Where(ip2 => ip2.AddressFamily == AddressFamily.InterNetwork)) {
+            //        mappings.Add(_localPort, "UDP", _localPort, ip2.ToString(), true, "Local Web Server");
+            //        Console.WriteLine("Forwarding port " + _localPort + " for ip " + ip2);
+            //        break;
+            //    }
+            //} else Console.WriteLine("UPnP is not supported.");
 
             GlobalPacketId = startingPacketNo;
 
